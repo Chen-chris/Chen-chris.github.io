@@ -14,9 +14,8 @@
 	<script type="text/javascript" src="js/garden.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
 </head>
-
 <body>
-<audio src="Ellie Goulding - How Long Will I Love You.mp3" autoplay display="display"></audio>
+<audio src="Ellie Goulding - How Long Will I Love You.mp3" autoplay display="display" id="audio"></audio>
 
 	<div id="mainDiv">
 		<div id="content">
@@ -57,13 +56,13 @@
 					</div>
 					<div id="loveu">
 						Love u forever and ever.<br/>
-						<div class="signature">- geekchen</div>
+						<div class="signature">- Chen</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
-			Copyright © 2017 geekchen</a> 
+			Copyright © 2017 GeekChen</a> 
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -98,6 +97,11 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
+var audio = document.getElementById("audio"); 
+audio.addEventListener('ended', function () {  
+	  audio.setAttribute('src', "Ed Sheeran - Photograph.mp3"); 
+    audio.play()
+}, false);
 	</script>
 </body>
 </html>
